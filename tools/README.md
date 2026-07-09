@@ -9,7 +9,24 @@ PCを離れていても、この環境から **Googleカレンダー登録** と
 | `google_auth.py` | 共通認証（環境変数から鍵を読む） | クラウド |
 | `calendar_add.py` | カレンダーに予定を追加 | クラウド |
 | `gmail_send.py` | メールを送信 | クラウド |
+| `distance.py` | 通勤費：自宅→集合場所の道路距離→月額バンド | クラウド |
 | `make_refresh_token.py` | リフレッシュトークンを発行 | **PC** |
+
+## 鍵は2種類（別物）
+| 鍵（環境変数） | 用途 |
+|---------------|------|
+| `GOOGLE_CLIENT_ID` / `GOOGLE_CLIENT_SECRET` / `GOOGLE_REFRESH_TOKEN` | カレンダー・Gmail（OAuth） |
+| `GOOGLE_MAPS_API_KEY` | 通勤距離計算（Maps Distance Matrix・課金有効） |
+
+## 通勤費の再計算（都度・変更時に一声）
+名簿が変わったら:
+1. 最新名簿を `people.local.json`（**Git管理外**）に用意（`no`/`name`/`address`）
+2. 実行:
+   ```bash
+   python3 tools/distance.py --office "福岡県福岡市博多区月隈2-23" --input people.local.json
+   ```
+3. 出力の距離帯・月額・年額で Notion人事部「🚗 通勤費 距離データ・試算」を更新
+- ⚠️ `people.local.json` は氏名・住所を含むので**絶対にコミットしない**（`.gitignore`で `*.local.json` 除外済み）。
 
 ## セットアップ（1回だけ）
 
