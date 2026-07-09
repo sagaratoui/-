@@ -66,5 +66,9 @@
   - PC側で編集 → PCから `git push`
 - 食い違ったら **Notionを正**とする。
 
+## 7. PCに戻ったらやること
+- [ ] この `open.md`・`HANDOFF.md` を PC側 `.company/` と `todos/open.md` に反映
+- [ ] **PC側Claudeに明記させる**：「TODOの真実の源はNotion。ローカルは控え。食い違ったらNotionを正」を `.company/` に書き、Claudeの記憶にも入れる（※Notion構成ガイドには記載済みだがPC側メモリは別物のため念押し）
+
 ---
-*作成：Claude（Web） / 2026-07-09。次にPCへ戻ったら、この内容をPCの `.company/` と `todos/open.md` にも反映すること。*
+*作成：Claude（Web） / 2026-07-09。*
