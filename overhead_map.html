@@ -1,0 +1,166 @@
+<title>晴栄建設 AI秘書システム — 俯瞰マップ</title>
+<style>
+  :root{
+    --bg:#f6f7f9; --panel:#ffffff; --ink:#1a1d21; --sub:#5b6470;
+    --line:#e3e7ec; --accent:#2f6fed; --danger:#e0483b; --warn:#e08a2b;
+    --ok:#2f9e56; --chip:#eef1f6; --shadow:0 1px 3px rgba(20,30,50,.08);
+  }
+  @media (prefers-color-scheme:dark){
+    :root{--bg:#0e1116;--panel:#161b22;--ink:#e7ecf2;--sub:#9aa4b2;
+      --line:#252c36;--accent:#5b8cff;--danger:#ff6a5c;--warn:#f0a94a;
+      --ok:#4fc57e;--chip:#1e242d;--shadow:0 1px 3px rgba(0,0,0,.4);}
+  }
+  :root[data-theme=dark]{--bg:#0e1116;--panel:#161b22;--ink:#e7ecf2;--sub:#9aa4b2;
+    --line:#252c36;--accent:#5b8cff;--danger:#ff6a5c;--warn:#f0a94a;--ok:#4fc57e;--chip:#1e242d;}
+  :root[data-theme=light]{--bg:#f6f7f9;--panel:#fff;--ink:#1a1d21;--sub:#5b6470;
+    --line:#e3e7ec;--accent:#2f6fed;--danger:#e0483b;--warn:#e08a2b;--ok:#2f9e56;--chip:#eef1f6;}
+
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:-apple-system,"Hiragino Kaku Gothic ProN","Noto Sans JP",sans-serif;
+    line-height:1.5;-webkit-font-smoothing:antialiased;padding:20px 16px 48px;}
+  .wrap{max-width:1040px;margin:0 auto;}
+  header{margin-bottom:18px;}
+  h1{font-size:20px;margin:0 0 4px;letter-spacing:.01em;}
+  .meta{font-size:12.5px;color:var(--sub);}
+  .lifeline{margin:14px 0 20px;padding:12px 14px;border-radius:12px;
+    background:linear-gradient(90deg,rgba(224,72,59,.10),rgba(224,72,59,.02));
+    border:1px solid var(--danger);}
+  .lifeline b{color:var(--danger);}
+  .lifeline .t{font-size:13px;}
+  .grid{display:grid;gap:12px;grid-template-columns:repeat(2,1fr);}
+  @media(max-width:720px){.grid{grid-template-columns:1fr;}}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;
+    padding:14px 15px;box-shadow:var(--shadow);}
+  .card h2{font-size:14px;margin:0 0 10px;display:flex;align-items:center;gap:8px;}
+  .card h2 .ic{font-size:16px;}
+  ul{margin:0;padding:0;list-style:none;}
+  li{font-size:13px;padding:5px 0;border-top:1px dashed var(--line);display:flex;gap:8px;}
+  li:first-child{border-top:none;}
+  .dot{flex:0 0 auto;width:8px;height:8px;border-radius:50%;margin-top:6px;}
+  .d-danger{background:var(--danger);} .d-warn{background:var(--warn);}
+  .d-accent{background:var(--accent);} .d-ok{background:var(--ok);}
+  .tag{display:inline-block;font-size:10.5px;padding:1px 6px;border-radius:999px;
+    background:var(--chip);color:var(--sub);margin-left:6px;vertical-align:middle;}
+  .tag.hi{background:rgba(224,72,59,.14);color:var(--danger);}
+  .cal{background:var(--panel);border:1px solid var(--line);border-radius:14px;
+    padding:14px 15px;box-shadow:var(--shadow);margin:12px 0;}
+  .cal h2{font-size:14px;margin:0 0 10px;}
+  .row{display:flex;gap:10px;font-size:13px;padding:6px 0;border-top:1px dashed var(--line);}
+  .row:first-of-type{border-top:none;}
+  .when{flex:0 0 88px;font-weight:600;color:var(--accent);}
+  .depts{display:flex;flex-wrap:wrap;gap:8px;margin:4px 0 2px;}
+  .dept{font-size:12px;padding:4px 10px;border-radius:999px;background:var(--chip);
+    border:1px solid var(--line);}
+  footer{margin-top:22px;font-size:11.5px;color:var(--sub);text-align:center;}
+  a{color:var(--accent);text-decoration:none;}
+</style>
+
+<div class="wrap">
+  <header>
+    <h1>🛰️ 晴栄建設 AI秘書システム — 俯瞰マップ</h1>
+    <div class="meta">真実の源 = Notion「晴栄建設 HQ」／このリポジトリは open.md・HANDOFF.md のミラー ・ 最終同期 2026-07-09 ・ 社外秘</div>
+    <div class="depts">
+      <span class="dept">🏢 経営戦略</span>
+      <span class="dept">👥 採用・人事</span>
+      <span class="dept">🚧 現場管理(PM)</span>
+      <span class="dept">🗄️ 秘書室・TODO</span>
+    </div>
+  </header>
+
+  <div class="lifeline">
+    <div class="t"><b>⚠️ 生命線</b> ─ 須恵造成の売却入金 → 西銀 <b>3,200万</b> を12月に返済。
+    逆算で <b>9月売出しが必達</b>。盛土が9月に食い込み中（人員配分問題）＝塩見「週4日ライン」が9月末完工の分岐点。</div>
+  </div>
+
+  <div class="cal">
+    <h2>🗓️ 直近の締切（7/9時点）</h2>
+    <div class="row"><span class="when">7/10</span><span>世紀東急へ警備営業（提案資料PDF持参）／税理士アポ＝PL・消費税・課税確認3件</span></div>
+    <div class="row"><span class="when">7/13(月)17:00</span><span>King of Time キックオフ 班長会議</span></div>
+    <div class="row"><span class="when">7/22締切</span><span>斗偉さん 2級土木施工管理技士 申込（試験10/25）</span></div>
+    <div class="row"><span class="when">7/27週</span><span>須恵 上下水 打ち合わせ日程を確定</span></div>
+    <div class="row"><span class="when">12月アンカー</span><span>須恵売却入金 → 西銀3,200万返済（9月売出し必達）</span></div>
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <h2><span class="ic">🏗️</span> 造成工事（須恵）</h2>
+      <ul>
+        <li><span class="dot d-danger"></span><span>塩見に「週何日張れる？」＝週4日ライン確認<span class="tag hi">高</span></span></li>
+        <li><span class="dot d-danger"></span><span>3,200万 借換を西銀に地ならし（社長経由）<span class="tag hi">高</span></span></li>
+        <li><span class="dot d-danger"></span><span>粗利試算＋売却入金時期をCF予測へ反映<span class="tag hi">高</span></span></li>
+        <li><span class="dot d-ok"></span><span>出口確認・盛土9月食い込み判明（済）</span></li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2><span class="ic">💰</span> 資金繰り／CF予測</h2>
+      <ul>
+        <li><span class="dot d-warn"></span><span>福岡中央2,500万・西銀3,200万の返済予定表を入手</span></li>
+        <li><span class="dot d-warn"></span><span>6月PL確定・消費税の時期（7/10税理士）</span></li>
+        <li><span class="dot d-ok"></span><span>CF第一版完成／現金5,217万・12月に3,200万の崖（済）</span></li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2><span class="ic">🛡️</span> 警備事業</h2>
+      <ul>
+        <li><span class="dot d-danger"></span><span>世紀東急（新規）へ営業＝7/10・提案資料持参<span class="tag hi">高</span></span></li>
+        <li><span class="dot d-accent"></span><span>派遣先の分散開拓／坂本さんの役割再定義</span></li>
+        <li><span class="dot d-ok"></span><span>提案資料(A4 1枚)PDF化・坂本ヒアリング完了（済）</span></li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2><span class="ic">📈</span> 経営戦略：SISUKEN・収益</h2>
+      <ul>
+        <li><span class="dot d-danger"></span><span>SISUKEN 9月案件を受注（詳細7月末→施工8月末＝間1ヶ月）<span class="tag hi">高</span></span></li>
+        <li><span class="dot d-danger"></span><span>外注先2社に施工可否確認／下限粗利率を社長合意<span class="tag hi">高</span></span></li>
+        <li><span class="dot d-warn"></span><span>部門タグ導入（7/10）で来期から工種別原価/粗利</span></li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2><span class="ic">👥</span> 採用・YouTube・トルトル</h2>
+      <ul>
+        <li><span class="dot d-danger"></span><span>【番人】元請現場の撮影・公開は許可必須＝ライフクリエイト確認</span></li>
+        <li><span class="dot d-warn"></span><span>後藤矢雲→週末連絡／上條→再連絡or終了 判断</span></li>
+        <li><span class="dot d-accent"></span><span>トルトル内製化＝解約前提（年240万削減狙い）</span></li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2><span class="ic">🎯</span> 人事評価・給与制度</h2>
+      <ul>
+        <li><span class="dot d-danger"></span><span>斗偉が2級土木施工管理技士（申込7/22・試験10/25）<span class="tag hi">高</span></span></li>
+        <li><span class="dot d-warn"></span><span>通勤費ポリシー7ステップ／出張旅費規程（7/10課税確認）</span></li>
+        <li><span class="dot d-accent"></span><span>岡部さんG4育成「任せる話」（12月アンカー）</span></li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2><span class="ic">🚧</span> 現場管理</h2>
+      <ul>
+        <li><span class="dot d-danger"></span><span>日報立て直し＝King of Time（7/13キックオフ）<span class="tag hi">高</span></span></li>
+        <li><span class="dot d-warn"></span><span>博多港駐車場舗装＝相見積り結果待ち（下限粗利32%死守）</span></li>
+        <li><span class="dot d-accent"></span><span>班体制表の工種・人数ヒアリング</span></li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2><span class="ic">🔧</span> 秘書・自動化</h2>
+      <ul>
+        <li><span class="dot d-danger"></span><span>クラウドからカレンダー/メールを使う鍵＝CLIENT_ID/SECRET/REFRESH_TOKEN をWeb環境シークレットに登録</span></li>
+        <li><span class="dot d-ok"></span><span>タスク通知メール復旧・朝夕通知 正常稼働（済）</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <footer>
+    凡例：<span style="color:var(--danger)">●</span> 高／期限直近
+    <span style="color:var(--warn)">●</span> 要対応
+    <span style="color:var(--accent)">●</span> 進行中
+    <span style="color:var(--ok)">●</span> 完了　・
+    詳細は Notion「✅ 未対応TODO一覧」を正とする
+  </footer>
+</div>
